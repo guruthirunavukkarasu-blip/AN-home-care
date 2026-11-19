@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN HOME CARE SERVICES | Care Today... Comfort Tomorrow</title>
+    <meta name="description" content="Trusted Home Care Services in Trichy & Madurai. Child Care, Elder Care, Men & Women Care, Patient Attendant, Caregiver & Housekeeping Services. Call +91 9445093799.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for crisp healthcare & service icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#0F4C5C',      // Deep trustworthy medical teal
+                            tealDark: '#093440',  // Darker teal for hover/footer
+                            sage: '#1B8A6B',      // Reassuring emerald/sage accent
+                            sageLight: '#E6F4F0', // Soft sage tint
+                            cream: '#FAF9F6',     // Warm comforting off-white
+                            amber: '#D97706',     // Warm human touch accent
+                            slate: '#1E293B',     // High contrast text
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(15, 76, 92, 0.08)',
+                        'card': '0 4px 20px -2px rgba(15, 76, 92, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-slate antialiased selection:bg-brand-teal selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-tealDark text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 justify-center sm:justify-start">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-medium tracking-wide">24/7 Compassionate Home Care Support in <strong>Trichy & Madurai</strong></span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+919445093799" class="hover:text-emerald-300 transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone-volume text-emerald-400"></i>
+                    <span>+91 9445093799</span>
+                </a>
+                <span class="hidden md:inline text-white/30">|</span>
+                <span class="hidden md:inline text-white/80">anhomecareservices.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo & Name -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-teal to-brand-sage flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-hand-holding-heart text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block font-heading font-extrabold text-lg sm:text-xl tracking-tight text-brand-teal leading-none">
+                            AN HOME CARE SERVICES
+                        </span>
+                        <span class="block text-[11px] sm:text-xs font-medium text-brand-sage mt-1 tracking-wide">
+                            Care Today... Comfort Tomorrow
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-semibold text-slate-700 hover:text-brand-teal transition">Home</a>
+                    <a href="#services" class="text-sm font-semibold text-slate-700 hover:text-brand-teal transition">Our Services</a>
+                    <a href="#why-us" class="text-sm font-semibold text-slate-700 hover:text-brand-teal transition">Why Choose Us</a>
+                    <a href="#branches" class="text-sm font-semibold text-slate-700 hover:text-brand-teal transition">Trichy & Madurai Branches</a>
+                    <a href="#book-care" class="text-sm font-semibold text-slate-700 hover:text-brand-teal transition">Request Callback</a>
+                </nav>
+
+                <!-- Desktop Call CTA & Mobile Menu Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:+919445093799" class="hidden sm:inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-tealDark text-white font-semibold text-sm px-5 py-3 rounded-xl shadow-sm transition transform active:scale-95">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call +91 9445093799</span>
+                    </a>
+                    <a href="tel:+919445093799" aria-label="Call AN Home Care Services" class="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-teal text-white shadow-sm">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+            <a href="#home" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-sageLight hover:text-brand-teal">Home</a>
+            <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-sageLight hover:text-brand-teal">Our Services (6 Specialties)</a>
+            <a href="#why-us" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-sageLight hover:text-brand-teal">Why Choose Us</a>
+            <a href="#branches" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-sageLight hover:text-brand-teal">Branches (Trichy & Madurai)</a>
+            <a href="#book-care" class="mobile-link block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-sageLight hover:text-brand-teal">Book a Service</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
+                <a href="tel:+919445093799" class="w-full flex items-center justify-center gap-2 bg-brand-teal text-white font-semibold py-3.5 rounded-xl">
+                    <i class="fa-solid fa-phone"></i> Call +91 9445093799
+                </a>
+                <a href="https://wa.me/919445093799?text=Hello%20AN%20Home%20Care%20Services%2C%20I%20would%20like%20to%20enquire%20about%20your%20home%20care%20services." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3.5 rounded-xl">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Quick Chat
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-white via-brand-sageLight/40 to-brand-cream pt-10 pb-16 lg:pt-16 lg:pb-24">
+        <!-- Decorative background shapes -->
+        <div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-brand-sage/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-24 -mb-24 w-80 h-80 rounded-full bg-brand-teal/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Column: Tagline, Value Proposition & Direct CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-sageLight border border-brand-sage/20 text-brand-teal font-semibold text-xs sm:text-sm">
+                        <i class="fa-solid fa-shield-heart text-brand-sage"></i>
+                        <span>Trusted Family & Patient Care in Trichy & Madurai</span>
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[3.4rem] text-brand-teal leading-[1.15] tracking-tight">
+                        Care Today... <br class="hidden sm:inline" />
+                        <span class="text-brand-sage">Comfort Tomorrow</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        At <strong>AN HOME CARE SERVICES</strong>, we bring hospital-grade reliability and family-like warmth directly to your doorstep. From newborn & child care to dedicated elder support, patient attendants, and spotless housekeeping—your loved ones are in safe, verified hands.
+                    </p>
+
+                    <!-- Primary Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="tel:+919445093799" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-base px-7 py-4 rounded-2xl shadow-soft transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>Call +91 9445093799</span>
+                        </a>
+                        <a href="https://wa.me/919445093799?text=Hello%20AN%20Home%20Care%20Services%2C%20I%20am%20looking%20for%20home%20care%20assistance." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-7 py-4 rounded-2xl shadow-soft transition transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Row -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-200/80">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <div class="w-8 h-8 rounded-lg bg-brand-sageLight text-brand-sage flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-check text-sm"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700 leading-tight">Background Verified Staff</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <div class="w-8 h-8 rounded-lg bg-brand-sageLight text-brand-sage flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-sm"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700 leading-tight">12-Hr & 24-Hr Care Shifts</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <div class="w-8 h-8 rounded-lg bg-brand-sageLight text-brand-sage flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hand-holding-medical text-sm"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700 leading-tight">Trained Caregivers</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+                            <div class="w-8 h-8 rounded-lg bg-brand-sageLight text-brand-sage flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-sm"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700 leading-tight">Trichy & Madurai Branches</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Quick Callback / Instant Service Finder Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-soft border border-slate-200/70">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-sage">Fast Response</span>
+                                <h2 class="font-heading font-bold text-xl sm:text-2xl text-brand-teal mt-0.5">Book Care in 60 Seconds</h2>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-sageLight text-brand-teal flex items-center justify-center">
+                                <i class="fa-solid fa-calendar-check text-xl"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-5">Select the care service and branch nearest to you. Our coordinator will call you back promptly.</p>
+                        
+                        <form id="hero-quick-form" class="space-y-3.5">
+                            <div>
+                                <label for="quick-name" class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                                <input type="text" id="quick-name" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent bg-slate-50/50">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                <div>
+                                    <label for="quick-phone" class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                                    <input type="tel" id="quick-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent bg-slate-50/50">
+                                </div>
+                                <div>
+                                    <label for="quick-branch" class="block text-xs font-semibold text-slate-700 mb-1">Preferred Branch *</label>
+                                    <select id="quick-branch" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent bg-slate-50/50">
+                                        <option value="Trichy Branch (Palakarai)">Trichy Branch</option>
+                                        <option value="Madurai Branch (Kalavasal)">Madurai Branch</option>
+                                        <option value="Other Location in Tamil Nadu">Other City / Town</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="quick-service" class="block text-xs font-semibold text-slate-700 mb-1">Required Service *</label>
+                                <select id="quick-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent bg-slate-50/50">
+                                    <option value="Child Care">1. Child Care (Nanny / Babysitter)</option>
+                                    <option value="Elder Care">2. Elder Care (Senior Support)</option>
+                                    <option value="Men & Women Care">3. Men & Women Care</option>
+                                    <option value="Patient Attendant">4. Patient Attendant</option>
+                                    <option value="Caregiver Service">5. Caregiver Service</option>
+                                    <option value="Housekeeping Services">6. Housekeeping Services</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-sage hover:bg-emerald-700 text-white font-bold text-sm sm:text-base py-3.5 px-6 rounded-xl shadow-md transition flex items-center justify-center gap-2 mt-2">
+                                <span>Request Immediate Callback</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                        <p class="text-[11px] text-center text-slate-400 mt-3">
+                            <i class="fa-solid fa-lock text-brand-sage mr-1"></i> 100% Confidential • Direct assistance from Trichy & Madurai teams
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section (6 Specialized Services) -->
+    <section id="services" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-sageLight text-brand-teal font-bold text-xs uppercase tracking-wider mb-3">
+                    Our Specialized Care Solutions
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-teal tracking-tight">
+                    Comprehensive Care & Home Support
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    Every family has unique needs. Choose from our six dedicated home care and housekeeping services—available on flexible hourly, 12-hour, or 24-hour live-in schedules.
+                </p>
+            </div>
+
+            <!-- 6 Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                
+                <!-- Service 1: Child Care -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-baby-carriage text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Child Care</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Loving, attentive nannies and trained babysitters who ensure your newborn, infant, or toddler is safe, engaged, and well-nourished while you work or rest.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Newborn & infant feeding & hygiene</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Toddler supervision & playtime</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Verified & motherly female caretakers</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Child Care')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Child Care</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2: Elder Care -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-100 text-brand-teal flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-person-cane text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Elder Care</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Dignified companionship and daily living assistance for senior citizens, helping them age gracefully and comfortably in the familiarity of their own home.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Walking, mobility & fall-prevention support</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Timely medication & meal reminders</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Warm emotional companionship</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Elder Care')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Elder Care</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3: Men & Women Care -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-restroom text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Men & Women Care</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Dedicated gender-matched male and female personal care assistants ensuring complete privacy, cultural sensitivity, and personal comfort for every individual.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Male caretakers for men; Female for women</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Bathing, grooming & dressing assistance</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Respectful, dignified personal hygiene</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Men & Women Care')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Men & Women Care</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4: Patient Attendant -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bed-pulse text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Patient Attendant</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Specialized bedside and post-hospitalization recovery support for surgical, convalescing, or bedridden patients at home or in hospital wards.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Post-surgery & hospital discharge care</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Bedridden turning, feeding & sponge bath</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Vitals tracking & doctor visit accompaniment</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Patient Attendant')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Patient Attendant</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5: Caregiver Service -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-sage flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-user-nurse text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Caregiver Service</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Compassionate, trained full-time and part-time caregivers tailored for chronic conditions, disability support, and long-term family peace of mind.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> 12-hour day/night & 24-hour live-in options</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Dementia, stroke & paralysis home support</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Immediate replacement guarantee</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Caregiver Service')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Caregiver Service</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6: Housekeeping Services -->
+                <div class="group bg-brand-cream/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 hover:border-brand-sage/40 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-sparkles text-2xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-brand-teal mb-2.5">Housekeeping Services</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Hygienic, reliable home cleaning, sanitization, and domestic assistance so your living space stays fresh, healthy, and stress-free every day.
+                        </p>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Daily domestic help, sweeping & mopping</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Kitchen, bathroom & patient-room sanitization</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-sage"></i> Trustworthy, police-verified housekeepers</li>
+                        </ul>
+                    </div>
+                    <button type="button" onclick="selectServiceAndScroll('Housekeeping Services')" class="w-full py-3 px-4 rounded-xl bg-white group-hover:bg-brand-teal text-brand-teal group-hover:text-white border border-brand-teal/20 font-semibold text-sm transition flex items-center justify-center gap-2">
+                        <span>Book Housekeeping</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose AN Home Care Services Section -->
+    <section id="why-us" class="py-16 lg:py-24 bg-brand-teal text-white relative overflow-hidden">
+        <!-- Subtle decorative pattern -->
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block px-3.5 py-1.5 rounded-full bg-white/10 text-emerald-300 font-bold text-xs uppercase tracking-wider">
+                        Why Families Trust Us
+                    </span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl leading-tight">
+                        Compassion You Can Feel, Reliability You Can Count On.
+                    </h2>
+                    <p class="text-white/80 text-base leading-relaxed">
+                        Inviting someone into your home requires complete trust. At <strong>AN HOME CARE SERVICES</strong>, every caretaker and housekeeping professional undergoes strict ID verification, health screening, and practical empathy training before serving your family.
+                    </p>
+                    <div class="pt-2">
+                        <a href="tel:+919445093799" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-brand-tealDark font-extrabold px-6 py-4 rounded-2xl shadow-lg transition">
+                            <i class="fa-solid fa-headset text-lg"></i>
+                            <span>Speak to a Care Coordinator: +91 9445093799</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white/10 backdrop-blur-xs border border-white/15 rounded-2xl p-6">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-id-card-clip text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg mb-2">100% Background Verified</h3>
+                        <p class="text-sm text-white/75 leading-relaxed">
+                            Thorough Aadhaar, address, and reference verification for every caregiver, nanny, attendant, and housekeeper.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-xs border border-white/15 rounded-2xl p-6">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-heart-pulse text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg mb-2">Trained & Empathetic Staff</h3>
+                        <p class="text-sm text-white/75 leading-relaxed">
+                            Skilled in safe patient handling, senior mobility, child hygiene, and respectful communication in Tamil & English.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-xs border border-white/15 rounded-2xl p-6">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-calendar-days text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg mb-2">Flexible Plans & Replacements</h3>
+                        <p class="text-sm text-white/75 leading-relaxed">
+                            Choose hourly visits, 12-hour day/night shifts, or 24-hour stay-in care—with prompt staff replacement whenever needed.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-xs border border-white/15 rounded-2xl p-6">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-building-shield text-xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg mb-2">Direct Local Branch Support</h3>
+                        <p class="text-sm text-white/75 leading-relaxed">
+                            Physical offices in both <strong>Trichy (Palakarai)</strong> and <strong>Madurai (Kalavasal)</strong> for face-to-face consultations and rapid deployment.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Service Booking / Callback Section -->
+    <section id="book-care" class="py-16 lg:py-24 bg-brand-cream">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-soft border border-slate-200/80 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    
+                    <!-- Left Info Banner -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-brand-teal to-brand-tealDark text-white p-8 sm:p-10 flex flex-col justify-between">
+                        <div class="space-y-5">
+                            <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                                Personalized Care Plan
+                            </span>
+                            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl leading-snug">
+                                Schedule Home Care or Request a Free Consultation
+                            </h2>
+                            <p class="text-sm text-white/80 leading-relaxed">
+                                Tell us about your family member's needs. You can submit the form for a callback or send your requirement directly to our WhatsApp desk for instant response.
+                            </p>
+
+                            <div class="space-y-4 pt-4 border-t border-white/15 text-sm">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-phone text-emerald-400 mt-1"></i>
+                                    <div>
+                                        <span class="block text-white/60 text-xs">24/7 Helpline</span>
+                                        <a href="tel:+919445093799" class="font-bold text-base hover:text-emerald-300 transition">+91 9445093799</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-globe text-emerald-400 mt-1"></i>
+                                    <div>
+                                        <span class="block text-white/60 text-xs">Official Website</span>
+                                        <span class="font-semibold">anhomecareservices.com</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-emerald-400 mt-1"></i>
+                                    <div>
+                                        <span class="block text-white/60 text-xs">Service Hubs</span>
+                                        <span class="font-semibold">Trichy & Madurai, Tamil Nadu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/15">
+                            <p class="text-xs italic text-emerald-200 font-medium">
+                                "Care Today... Comfort Tomorrow"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Interactive Form -->
+                    <div class="lg:col-span-7 p-8 sm:p-10">
+                        <form id="detailed-booking-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="book-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Full Name *</label>
+                                    <input type="text" id="book-name" required placeholder="e.g., Karthik Subramanian" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50">
+                                </div>
+                                <div>
+                                    <label for="book-phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Mobile / WhatsApp Number *</label>
+                                    <input type="tel" id="book-phone" required placeholder="e.g., +91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="book-branch" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Select Branch / City *</label>
+                                    <select id="book-branch" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50">
+                                        <option value="Trichy Branch (Palakarai)">Trichy Branch (Palakarai)</option>
+                                        <option value="Madurai Branch (Kalavasal)">Madurai Branch (Kalavasal)</option>
+                                        <option value="Other Location in Tamil Nadu">Other Location in Tamil Nadu</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="book-service" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Service Required *</label>
+                                    <select id="book-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50">
+                                        <option value="Child Care">Child Care</option>
+                                        <option value="Elder Care">Elder Care</option>
+                                        <option value="Men & Women Care">Men & Women Care</option>
+                                        <option value="Patient Attendant">Patient Attendant</option>
+                                        <option value="Caregiver Service">Caregiver Service</option>
+                                        <option value="Housekeeping Services">Housekeeping Services</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="book-shift" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Preferred Shift / Duration</label>
+                                <select id="book-shift" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50">
+                                    <option value="Day Shift (8 - 12 Hours)">Day Shift (8 – 12 Hours)</option>
+                                    <option value="Night Shift (12 Hours)">Night Shift (12 Hours)</option>
+                                    <option value="24-Hour Live-In Care">24-Hour Full-Time Live-In Care</option>
+                                    <option value="Part-Time / Hourly Visit">Part-Time / Hourly Visit</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="book-notes" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Care Details / Address Area (Optional)</label>
+                                <textarea id="book-notes" rows="3" placeholder="Mention patient/elder age, gender preference (Male/Female caretaker), or area name..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal bg-slate-50/50"></textarea>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                                <button type="submit" class="flex-1 bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-sm py-3.5 px-5 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Submit Booking Request</span>
+                                </button>
+                                <button type="button" id="send-whatsapp-btn" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm py-3.5 px-5 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Send via WhatsApp</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Branches & Contact Locations Section -->
+    <section id="branches" class="py-16 lg:py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-sageLight text-brand-teal font-bold text-xs uppercase tracking-wider mb-3">
+                    Visit or Reach Us
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-teal tracking-tight">
+                    Our Branches in Tamil Nadu
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    We operate dedicated local offices in Trichy and Madurai to ensure prompt caregiver placement and reliable supervision.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Trichy Branch Card -->
+                <div class="bg-brand-cream rounded-3xl p-8 border border-slate-200/90 shadow-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-teal text-white text-xs font-bold">
+                                <i class="fa-solid fa-location-dot"></i> TRICHY BRANCH
+                            </span>
+                            <span class="text-xs font-semibold text-brand-sage bg-brand-sageLight px-3 py-1 rounded-full">
+                                Open Mon – Sun
+                            </span>
+                        </div>
+                        
+                        <h3 class="font-heading font-bold text-2xl text-brand-teal mb-3">
+                            Tiruchirappalli (Palakarai) Office
+                        </h3>
+                        
+                        <div class="space-y-3 text-slate-700 text-sm sm:text-base mb-6">
+                            <p class="flex items-start gap-3">
+                                <i class="fa-solid fa-map-pin text-brand-sage mt-1.5 shrink-0"></i>
+                                <span>
+                                    <strong>No. 34, Goods Shed Road, Palakarai,</strong><br>
+                                    Trichy – 620008, Tamil Nadu.
+                                </span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-sage shrink-0"></i>
+                                <a href="tel:+919445093799" class="font-bold text-brand-teal hover:underline">+91 9445093799</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-clock text-brand-sage shrink-0"></i>
+                                <span>Office: 9:00 AM – 8:00 PM | Care Support: 24/7</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-slate-200/80">
+                        <a href="https://www.google.com/maps/search/?api=1&query=No.+34,+Goods+Shed+Road,+Palakarai,+Trichy+620008,+Tamil+Nadu" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-teal hover:bg-brand-tealDark text-white font-semibold text-sm py-3 px-4 rounded-xl transition">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <span>Get Directions</span>
+                        </a>
+                        <button type="button" onclick="copyBranchAddress('AN HOME CARE SERVICES - Trichy Branch: No. 34, Goods Shed Road, Palakarai, Trichy – 620008, Tamil Nadu. Phone: +91 9445093799')" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold text-sm py-3 px-4 rounded-xl transition">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>Copy Address</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Madurai Branch Card -->
+                <div class="bg-brand-cream rounded-3xl p-8 border border-slate-200/90 shadow-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-sage text-white text-xs font-bold">
+                                <i class="fa-solid fa-location-dot"></i> MADURAI BRANCH
+                            </span>
+                            <span class="text-xs font-semibold text-brand-teal bg-teal-50 px-3 py-1 rounded-full">
+                                Open Mon – Sun
+                            </span>
+                        </div>
+                        
+                        <h3 class="font-heading font-bold text-2xl text-brand-teal mb-3">
+                            Madurai (Kalavasal) Office
+                        </h3>
+                        
+                        <div class="space-y-3 text-slate-700 text-sm sm:text-base mb-6">
+                            <p class="flex items-start gap-3">
+                                <i class="fa-solid fa-map-pin text-brand-sage mt-1.5 shrink-0"></i>
+                                <span>
+                                    <strong>No. 13/9, Chokkalinganagar, Bypass Road, Kalavasal,</strong><br>
+                                    Madurai – 625016, Tamil Nadu.
+                                </span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-sage shrink-0"></i>
+                                <a href="tel:+919445093799" class="font-bold text-brand-teal hover:underline">+91 9445093799</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-clock text-brand-sage shrink-0"></i>
+                                <span>Office: 9:00 AM – 8:00 PM | Care Support: 24/7</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-slate-200/80">
+                        <a href="https://www.google.com/maps/search/?api=1&query=No.+13/9,+Chokkalinganagar,+Bypass+Road,+Kalavasal,+Madurai+625016,+Tamil+Nadu" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-teal hover:bg-brand-tealDark text-white font-semibold text-sm py-3 px-4 rounded-xl transition">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <span>Get Directions</span>
+                        </a>
+                        <button type="button" onclick="copyBranchAddress('AN HOME CARE SERVICES - Madurai Branch: No. 13/9, Chokkalinganagar, Bypass Road, Kalavasal, Madurai – 625016, Tamil Nadu. Phone: +91 9445093799')" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold text-sm py-3 px-4 rounded-xl transition">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>Copy Address</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-tealDark text-white pt-16 pb-24 sm:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-sage flex items-center justify-center text-white">
+                            <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="block font-heading font-extrabold text-lg tracking-tight leading-none">
+                                AN HOME CARE SERVICES
+                            </span>
+                            <span class="block text-xs text-emerald-300 mt-1">
+                                Care Today... Comfort Tomorrow
+                            </span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-white/75 leading-relaxed">
+                        Dedicated to providing compassionate, trustworthy, and verified home care and housekeeping solutions across Trichy, Madurai, and Tamil Nadu.
+                    </p>
+                    <div class="pt-1 space-y-1.5 text-sm">
+                        <a href="tel:+919445093799" class="flex items-center gap-2 text-emerald-300 font-bold hover:text-white transition">
+                            <i class="fa-solid fa-phone"></i> +91 9445093799
+                        </a>
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i class="fa-solid fa-globe text-emerald-400"></i> anhomecareservices.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-base uppercase tracking-wider text-emerald-300 mb-4">Our Services</h4>
+                    <ul class="space-y-2.5 text-sm text-white/80">
+                        <li><button type="button" onclick="selectServiceAndScroll('Child Care')" class="hover:text-white transition">Child Care Services</button></li>
+                        <li><button type="button" onclick="selectServiceAndScroll('Elder Care')" class="hover:text-white transition">Elder Care & Senior Support</button></li>
+                        <li><button type="button" onclick="selectServiceAndScroll('Men & Women Care')" class="hover:text-white transition">Men & Women Care</button></li>
+                        <li><button type="button" onclick="selectServiceAndScroll('Patient Attendant')" class="hover:text-white transition">Patient Attendant</button></li>
+                        <li><button type="button" onclick="selectServiceAndScroll('Caregiver Service')" class="hover:text-white transition">Caregiver Service</button></li>
+                        <li><button type="button" onclick="selectServiceAndScroll('Housekeeping Services')" class="hover:text-white transition">Housekeeping Services</button></li>
+                    </ul>
+                </div>
+
+                <!-- Trichy Branch -->
+                <div>
+                    <h4 class="font-heading font-bold text-base uppercase tracking-wider text-emerald-300 mb-4">Trichy Branch</h4>
+                    <p class="text-sm text-white/80 leading-relaxed">
+                        No. 34, Goods Shed Road,<br>
+                        Palakarai, Trichy – 620008,<br>
+                        Tamil Nadu.
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=No.+34,+Goods+Shed+Road,+Palakarai,+Trichy+620008,+Tamil+Nadu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 hover:underline mt-3">
+                        <i class="fa-solid fa-location-arrow"></i> View on Google Maps
+                    </a>
+                </div>
+
+                <!-- Madurai Branch -->
+                <div>
+                    <h4 class="font-heading font-bold text-base uppercase tracking-wider text-emerald-300 mb-4">Madurai Branch</h4>
+                    <p class="text-sm text-white/80 leading-relaxed">
+                        No. 13/9, Chokkalinganagar,<br>
+                        Bypass Road, Kalavasal,<br>
+                        Madurai – 625016, Tamil Nadu.
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=No.+13/9,+Chokkalinganagar,+Bypass+Road,+Kalavasal,+Madurai+625016,+Tamil+Nadu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 hover:underline mt-3">
+                        <i class="fa-solid fa-location-arrow"></i> View on Google Maps
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60 text-center sm:text-left">
+                <p>&copy; <span id="current-year"></span> AN HOME CARE SERVICES (anhomecareservices.com). All rights reserved.</p>
+                <p class="font-medium text-emerald-300/90">Care Today... Comfort Tomorrow</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Action Buttons (Desktop & Mobile) -->
+    <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919445093799?text=Hello%20AN%20Home%20Care%20Services%2C%20I%20would%20like%20to%20enquire%20about%20home%20care%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center transition transform hover:scale-105 p-3.5">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+        <!-- Call Floating Button -->
+        <a href="tel:+919445093799" aria-label="Call +91 9445093799" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-brand-teal hover:bg-brand-tealDark text-white shadow-xl flex items-center justify-center transition transform hover:scale-105 p-3.5 border-2 border-white/20">
+            <i class="fa-solid fa-phone text-xl sm:text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Custom Accessible Confirmation / Feedback Modal (Replaces alert) -->
+    <div id="feedback-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-xs p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-4 transform transition-all">
+            <div id="modal-icon-wrapper" class="w-16 h-16 rounded-2xl bg-brand-sageLight text-brand-sage flex items-center justify-center mx-auto">
+                <i class="fa-solid fa-circle-check text-3xl"></i>
+            </div>
+            <h3 id="modal-title" class="font-heading font-extrabold text-xl sm:text-2xl text-brand-teal">
+                Request Received!
+            </h3>
+            <p id="modal-message" class="text-sm text-slate-600 leading-relaxed">
+                Thank you for contacting AN HOME CARE SERVICES. Our care coordinator will call you shortly.
+            </p>
+            <div class="pt-2 flex flex-col gap-2.5">
+                <a id="modal-whatsapp-link" href="https://wa.me/919445093799" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center justify-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Also Send Directly on WhatsApp</span>
+                </a>
+                <button type="button" onclick="closeModal()" class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Set current copyright year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuIcon.classList.remove('fa-bars');
+                mobileMenuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('fa-xmark');
+                mobileMenuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Pre-select a service from the Services grid and scroll smoothly to booking form
+        function selectServiceAndScroll(serviceName) {
+            const serviceDropdown = document.getElementById('book-service');
+            if (serviceDropdown) {
+                serviceDropdown.value = serviceName;
+            }
+            const bookSection = document.getElementById('book-care');
+            if (bookSection) {
+                bookSection.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    document.getElementById('book-name').focus();
+                }, 600);
+            }
+        }
+
+        // Helper to build formatted WhatsApp enquiry URL
+        function buildWhatsAppUrl(name, phone, branch, service, shift, notes) {
+            const lines = [
+                `Hello *AN HOME CARE SERVICES*,`,
+                `I would like to book/enquire about a service:`,
+                `• *Name:* ${name}`,
+                `• *Phone:* ${phone}`,
+                `• *Branch/City:* ${branch}`,
+                `• *Service:* ${service}`,
+                shift ? `• *Shift:* ${shift}` : null,
+                notes ? `• *Notes:* ${notes}` : null
+            ].filter(Boolean);
+
+            const message = encodeURIComponent(lines.join('\n'));
+            return `https://wa.me/919445093799?text=${message}`;
+        }
+
+        // Modal controls
+        function openModal(title, message, whatsappUrl, showWhatsapp = true) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-message').textContent = message;
+            const waLink = document.getElementById('modal-whatsapp-link');
+            if (showWhatsapp && whatsappUrl) {
+                waLink.href = whatsappUrl;
+                waLink.classList.remove('hidden');
+            } else {
+                waLink.classList.add('hidden');
+            }
+            const modal = document.getElementById('feedback-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('feedback-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Close modal on outside backdrop click
+        document.getElementById('feedback-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'feedback-modal') {
+                closeModal();
+            }
+        });
+
+        // Hero Quick Form Submission
+        document.getElementById('hero-quick-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('quick-name').value.trim();
+            const phone = document.getElementById('quick-phone').value.trim();
+            const branch = document.getElementById('quick-branch').value;
+            const service = document.getElementById('quick-service').value;
+
+            const waUrl = buildWhatsAppUrl(name, phone, branch, service, 'Immediate Callback Requested', '');
+            openModal(
+                'Callback Request Sent!',
+                `Thank you, ${name}. Our ${branch} coordinator has received your enquiry for ${service} and will call ${phone} shortly.`,
+                waUrl,
+                true
+            );
+            this.reset();
+        });
+
+        // Detailed Booking Form Submission
+        document.getElementById('detailed-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('book-name').value.trim();
+            const phone = document.getElementById('book-phone').value.trim();
+            const branch = document.getElementById('book-branch').value;
+            const service = document.getElementById('book-service').value;
+            const shift = document.getElementById('book-shift').value;
+            const notes = document.getElementById('book-notes').value.trim();
+
+            const waUrl = buildWhatsAppUrl(name, phone, branch, service, shift, notes);
+            openModal(
+                'Service Enquiry Registered!',
+                `Thank you, ${name}. Your request for ${service} (${shift}) under ${branch} is confirmed. For immediate assistance, you can also send this summary via WhatsApp below.`,
+                waUrl,
+                true
+            );
+            this.reset();
+        });
+
+        // Direct "Send via WhatsApp" button in detailed booking form
+        document.getElementById('send-whatsapp-btn').addEventListener('click', function() {
+            const name = document.getElementById('book-name').value.trim() || 'Prospective Client';
+            const phone = document.getElementById('book-phone').value.trim() || 'Not specified';
+            const branch = document.getElementById('book-branch').value;
+            const service = document.getElementById('book-service').value;
+            const shift = document.getElementById('book-shift').value;
+            const notes = document.getElementById('book-notes').value.trim();
+
+            const waUrl = buildWhatsAppUrl(name, phone, branch, service, shift, notes);
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        });
+
+        // Copy Branch Address using execCommand fallback for iframe compatibility
+        function copyBranchAddress(text) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                openModal(
+                    'Branch Address Copied!',
+                    text,
+                    null,
+                    false
+                );
+            } catch (err) {
+                openModal(
+                    'Branch Address',
+                    text,
+                    null,
+                    false
+                );
+            }
+            document.body.removeChild(tempInput);
+        }
+    </script>
+</body>
+</html>
